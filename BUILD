@@ -19,3 +19,10 @@ cc_library(
     "pb_encode.c",
   ],
 )
+
+filegroup(
+  name = 'generator_files',
+  srcs = glob([
+    'generator/**',
+  ])
+)
